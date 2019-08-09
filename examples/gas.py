@@ -11,8 +11,15 @@ Press Ctrl+C to exit!
 
 try:
     while True:
-        readings = gas.read_all()
-        print(readings)
+        in0 = gas.adc.get_voltage('in0/ref')
+        print(in0)
+
+        in1 = gas.adc.get_voltage('in1/ref')
+        print(in1)
+    
+        in1 = gas.adc.get_voltage('in2/ref')
+        print(in2)
+
         time.sleep(1.0)
 except KeyboardInterrupt:
     pass
