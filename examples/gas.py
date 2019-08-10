@@ -51,13 +51,13 @@ def read_all():
     """Return gas resistence for oxidising, reducing and NH3"""
     setup()
     
-    in0 = adc.get_voltage('in0/ref')
+    in0 = adc.get_voltage('in0/gnd') / 3.3
     print 'in0: ', in0
     
-    in1 = adc.get_voltage('in1/ref')
+    in1 = adc.get_voltage('in1/gnd') / 3.3
     print 'in1: ', in1
 
-    in2 = adc.get_voltage('in2/ref')
+    in2 = adc.get_voltage('in3/gnd') / 3.3
     print 'in2: ', in2
     
 try:
