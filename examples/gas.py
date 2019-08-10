@@ -62,7 +62,7 @@ def read_all():
     
 try:
     while True:
-    read_all()
-    time.sleep(1.0)
+        read_all()
+        time.sleep(1.0)
 except KeyboardInterrupt:
     pass
