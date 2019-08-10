@@ -52,13 +52,13 @@ def read_all():
     setup()
     
     in0 = adc.get_voltage('in0/ref')
-    print('in0: {in0}')
+    print 'in0: ', in0
     
     in1 = adc.get_voltage('in1/ref')
-    print('in1: {in1}')
+    print 'in1: ', in1
 
     in2 = adc.get_voltage('in2/ref')
-    print('in2: {in2}')
+    print 'in2: ', in2
     
 try:
     while True:
