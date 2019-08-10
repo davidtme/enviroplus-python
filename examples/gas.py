@@ -57,7 +57,7 @@ def read_all():
     in1 = adc.get_voltage('in1/gnd') / 3.3
     print 'in1: ', in1
 
-    in2 = adc.get_voltage('in3/gnd') / 3.3
+    in2 = adc.get_voltage('in2/gnd') / 3.3
     print 'in2: ', in2
     
 try:
